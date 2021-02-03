@@ -16,7 +16,7 @@ console.log("JavaScript_AccountData:" + JSON.stringify(accounts));
 //Reading User Data
 const userData = fs.readFileSync('src/json/users.json', 'utf8');
 console.log("JSON_UserData:" + userData);
-const user = JSON.parse(userData);
+const users = JSON.parse(userData);
 console.log("JavaScript_UserData:" + JSON.stringify(userData));
 
 app.get('/', (request, response) => response.render('index', { 'title': 'Account Summary', 'accounts': accounts }));
